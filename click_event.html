@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Event ogrenme</title>
+    <script>src="jquery.js"</script>
+
+    <style>
+        .paragrafrenklendir{
+            color: blue;
+            font-size: 22px;
+
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">Sifirdan ileri duzey web gelistirme</p>
+    <p id="p2">Sifirdan ileri duzey web gelistirme</p>
+    <p id="paragraf">Sifirda ileri duzey web gelistirme</p>
+
+    <script>
+        $(document).ready(function(){
+            $(".paragraf").click(function(){
+                //console.log("paragrafa tiklandi");
+                $(this).addClass("paragrafrenklendi");
+
+            });
+        });
+    </script>
+</body>
+</html>
